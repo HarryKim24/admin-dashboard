@@ -1,0 +1,404 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+}
+
+#sidebar {
+  width: 20%;
+  min-width: 200px;
+  height: 100%;
+  padding: 10px 0px 20px 20px;
+  background-color: rgb(30, 150, 240);
+  color: rgb(250, 250, 250);
+  font-weight: bold;
+  padding-bottom: 396px;
+}
+
+#title_box {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+#title_box img {
+  width: 35px;
+  height: 35px;
+}
+
+#title_box h1 {
+  padding-left: 10px;
+  font-size: 1.5rem;
+}
+
+#menu_box {
+  margin-bottom: 30px;
+}
+
+#menu_box #home,
+#menu_box #profile,
+#menu_box #message,
+#menu_box #history,
+#menu_box #tasks,
+#menu_box #communities,
+#setting_box #settings,
+#setting_box #support,
+#setting_box #privacy
+{
+  display: flex;
+  padding: 5px 0;
+  cursor: pointer;
+}
+
+#menu_box #home img,
+#menu_box #profile img,
+#menu_box #message img,
+#menu_box #history img,
+#menu_box #tasks img,
+#menu_box #communities img,
+#setting_box #settings img,
+#setting_box #support img,
+#setting_box #privacy img
+{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 20px;
+  height: 20px;
+}
+
+#menu_box #home div,
+#menu_box #profile div,
+#menu_box #message div,
+#menu_box #history div,
+#menu_box #tasks div,
+#menu_box #communities div,
+#setting_box #settings div,
+#setting_box #support div,
+#setting_box #privacy div
+{
+  padding-top: 3px;
+  padding-left: 20px;
+  font-size: 1rem;
+}
+
+#content {
+  width: 80%;
+  min-width: 1050px;
+  height: 100%;
+  background-color: rgb(220, 220, 220);
+}
+
+#content #header {
+  padding: 20px 30px 0px 20px;
+  background-color: rgb(250, 250, 250);
+  height: 15%;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#content #header #header_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+#content #header #header_top #search_box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#content #header #header_top #search_box img {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+#content #header #header_top #search_box input {
+  width: 500px;
+  height: 25px;
+  border: none;;
+  border-radius: 50px;
+  padding-left: 10px;
+  background-color: rgb(220, 220, 220);
+}
+
+#content #header #header_top #name_box {
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+}
+
+#content #header #header_top #name_box #alert_box {
+  width: 20px;
+  height: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+
+#content #header #header_top #name_box #logo_box {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(230, 187, 79);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#content #header #header_top #name_box #logo_box img {
+  width: 25px;
+  height: 25px;
+  padding-top: 2px;
+  padding-left: 2.5px;
+}
+
+#content #header #header_top #name_box #name {
+  width: 120px;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-left: 10px;
+  padding-bottom: 2px;
+  cursor: pointer;
+}
+
+#content #header #header_bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#content #header #header_bottom #profile_name_box {
+  display: flex;
+  align-items: center;
+}
+
+#content #header #header_bottom #profile_name_box #profile_icon_box {
+  width: 50px;
+  height: 50px;
+  background-color: rgb(230, 187, 79);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#content #header #header_bottom #profile_name_box #profile_icon_box img {
+  width: 45px;
+  height: 45px;
+  padding-top: 1px;
+  padding-left: 2.5px;
+}
+
+#content #header #header_bottom #profile_name_box #profile {
+  padding-left: 20px;
+}
+
+#content #header #header_bottom #profile_name_box #profile #introduce {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+#content #header #header_bottom #profile_name_box #profile #profile_name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#content #header #header_bottom #button_box {
+  display: flex;
+}
+
+#content #header #header_bottom #button_box #new_button,
+#content #header #header_bottom #button_box #upload_button,
+#content #header #header_bottom #button_box #share_button {
+  width: 80px;
+  height: 25px;
+  background-color: rgb(30, 150, 240);
+  text-align: center;
+  padding-top: 6px;
+  margin-left: 25px;
+  font-size: 0.85rem;
+  font-weight: bold;
+  color: rgb(250, 250, 250);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#content #main {
+  display: flex;
+  padding-top: 20px;
+  justify-content: flex-start;
+  padding-bottom: 50px;
+}
+
+#content #main #your_projects {
+  min-width: 700px;
+}
+
+#content #main #your_projects #your_projects_title {
+  font-weight: bold;
+  font-size: 1rem;
+  padding-left: 20px;
+}
+
+#content #main #your_projects #project_container {
+  display: grid;
+  grid-template-columns: repeat(2, 350px);
+  grid-template-rows: repeat(3, 220px);
+}
+
+#content #main #your_projects #project_container #project1,
+#content #main #your_projects #project_container #project2,
+#content #main #your_projects #project_container #project3,
+#content #main #your_projects #project_container #project4,
+#content #main #your_projects #project_container #project5,
+#content #main #your_projects #project_container #project6
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+  border-left: 7px solid rgb(230, 187, 79);
+  border-radius: 7px;
+  background-color: rgb(250, 250, 250);
+  padding: 20px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#content #main #your_projects #project_title {
+  font-weight: bold;
+  font-size: 1rem;
+  padding-bottom: 5px;
+}
+
+#content #main #your_projects #project_content {
+  font-weight: bold;
+  font-size: 0.85rem;
+  color: rgba(0, 0, 0, 0.5);
+  line-height: 15px;
+}
+
+#content #main #your_projects #icons {
+  display: flex;
+  justify-content: flex-end;
+  cursor: pointer;
+}
+
+#content #main #your_projects #icons #concern,
+#content #main #your_projects #icons #eye,
+#content #main #your_projects #icons #share
+{
+  width: 20px;
+  height: 20px;
+  padding-left: 20px;
+}
+
+#content #main #announce_trend {
+  min-width: 300px;
+}
+
+#content #main #announce_trend #announcements {
+  width: 300px;
+}
+
+#content #main #announce_trend #announcements #announcements_title {
+  font-weight: bold;
+  font-size: 1rem;
+  padding-left: 20px;
+}
+
+#content #main #announce_trend #announcements #announces {
+  width: 250px;
+  height: 330px;
+  margin: 10px;
+  background-color: rgb(250, 250, 250);
+  padding-left: 20px;
+  padding: 10px 20px 20px 20px;
+  border-radius: 7px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#content #main #announce_trend #announcements #announces #announce1,
+#content #main #announce_trend #announcements #announces #announce2,
+#content #main #announce_trend #announcements #announces #announce3 {
+  padding-top: 10px;
+  padding-bottom: 5px;
+  height: 100px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+}
+
+#content #main #announce_trend #announcements #announces #announce1,
+#content #main #announce_trend #announcements #announces #announce2 {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+#content #main #announce_trend #announcements #announces #announce_title {
+  color: black;
+  font-size: 1rem;
+}
+
+#content #main #announce_trend #announcements #announces #announce_content {
+  font-size: 0.85rem;
+}
+
+#content #main #announce_trend #trending #trending_title {
+  font-weight: bold;
+  font-size: 1rem;
+  padding-left: 20px;
+}
+
+#content #main #announce_trend #trending #trending_content {
+  width: 290px;
+  margin: 10px;
+  background-color: rgb(250, 250, 250);
+  border-radius: 7px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#content #main #announce_trend #trending #trending_content #trending1,
+#content #main #announce_trend #trending #trending_content #trending2,
+#content #main #announce_trend #trending #trending_content #trending3,
+#content #main #announce_trend #trending #trending_content #trending4 {
+  display: flex;
+  padding: 16px 20px 0px 20px;
+  font-weight: bold;
+}
+
+#content #main #announce_trend #trending #trending_content #trending4 {
+  padding-bottom: 16px;
+}
+
+#content #main #announce_trend #trending #trending_content #trending_logo {
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
+  border-radius: 50px;
+}
+
+#content #main #announce_trend #trending #trending_content #trending1 #trending_logo {
+  background-color: rgb(166, 239, 255);
+}
+
+#content #main #announce_trend #trending #trending_content #trending2 #trending_logo {
+  background-color: rgb(230, 187, 79);
+}
+
+#content #main #announce_trend #trending #trending_content #trending3 #trending_logo {
+  background-color: rgb(152, 152, 152);
+}
+
+#content #main #announce_trend #trending #trending_content #trending4 #trending_logo {
+  background-color: rgb(255, 156, 199);
+}
+
+#content #main #announce_trend #trending #trending_content #trending_name_box {
+  padding-left: 15px;
+}
+
+#content #main #announce_trend #trending #trending_content #trending_name {
+  font-size: 1rem;
+}
+
+#content #main #announce_trend #trending #trending_content #trending_introduce {
+  font-size: 0.85rem;
+  color: rgba(0, 0, 0, 0.5);
+}
